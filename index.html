@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/site.css">
+    <script type='text/javascript' src="main.js"></script>
+
+    <title>Cadastros Filiais</title>
+
+
+</head>
+<body page='lista'>
+
+    <div id='listaRegistros'>
+            <div style="display: flex;">
+                <input type='flex:1' placeholder="Pesquisar" autofocus id='inputPesquisa'>
+
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>vlan60</th>
+                        <th>vlan61</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+                <tbody id='listaRegistrosBody'></tbody>
+            </table>
+
+            <div>
+                <button onclick="visualizar('cadastro',true )">Novo Cadastro</button>
+            </div>
+
+    </div>
+
+    <form id='cadastroRegistros'>
+        <div class="label">
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id'>
+            </div>
+        </div>
+        <div class="label">
+            <div>Nome</div>
+            <div>
+                <input id="nome">
+            </div>
+        </div>
+        <div class="label">
+            <div>vlan60</div>
+            <div>
+                <input id='vlan60' >
+            </div>
+        </div>
+        <div class="label">
+            <div>vlan61</div>
+            <div>
+                <input id='vlan61'>
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="visualizar('lista')" class="cinza" type="button">Cancelar</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
